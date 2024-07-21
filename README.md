@@ -2,10 +2,6 @@
 
 CropConnect is a web platform designed for wholesale crop trading, connecting sellers and consumers seamlessly. Although still in development, CropConnect offers a robust set of features for both sellers and consumers in the agricultural marketplace.
 
-## Deployed Link
-
-https://crop-connect-lime.vercel.app/
-
 ## Features
 
 1. **Dual Interfaces**: CropConnect provides separate interfaces for consumers and sellers, accessible through the navbar with options for SignUp and SignIn including email verification for the created account.
@@ -53,59 +49,3 @@ https://crop-connect-lime.vercel.app/
 - Recharts (for graphs)
 - Gemini AI
 - Other supporting technologies
-
-## Installation
-
-To run CropConnect locally, ensure you have NodeJS and MongoDB installed. Follow these steps:
-
-1. **Clone the repository**:
-    ```bash
-    git clone <repository-url>
-    cd CropConnect
-    ```
-
-2. **Frontend Setup**:
-    - Navigate to the CropConnect Frontend folder.
-    - Create a `.env` file in the root directory of the Frontend folder.
-    - Add the following environment variables to the client `.env` file:
-        ```plaintext
-        VITE_CROPCONNECT_API = "https://cropconnect-backend.vercel.app/" 
-        # Replace if you want to run the Backend local server to https://localhost:8080/
-        ```
-    - To run the Frontend:
-        ```bash
-        cd Frontend
-        npm run dev
-        ```
-
-3. **Backend Setup**:
-    - Navigate to the CropConnect Backend folder.
-    - Create a `.env` file in the root directory of the Backend folder.
-    - Add the following environment variables to the server `.env` file:
-        ```plaintext
-        MONGO_DB_URL = {your mongodb url}
-        GEMINI_API_KEY = {your gemini api key}
-        GMAIL_ID = {your gmail id}
-        APP_PASSWORD = {your google account app password}
-        JWT_SECRET = {jwt secret}
-        CLOUDINARY_CLOUD_NAME = {cloudinary clound name}
-        CLOUDINARY_API_KEY = {cloudinary api key}
-        CLOUDINARY_API_SECRET = {cloudinary api secret}
-        ```
-    - To run the Backend:
-        ```bash
-        # Use nodemon for automatic server restarts upon file changes
-        nodemon
-        # or
-        # Run the server with NodeJS
-        node index.js
-        ```
-
-By following these steps, you'll have the CropConnect application running locally on your machine. Adjust configurations as needed for your development environment.
-
-## Contribution
-
-CropConnect welcomes contributions from the community. Feel free to open issues or submit pull requests to help improve the platform.
-
-
-**If you find this project helpful, we'd appreciate it if you could give it a star ⭐.**
