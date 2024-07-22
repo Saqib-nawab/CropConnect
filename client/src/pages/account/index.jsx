@@ -139,7 +139,7 @@ function LoginAndSignup() {
 
             {isSignInForm ? (
               <div className="text-xs font-medium text-rose-600">
-                *In case you don't want to create an account, you can use the
+                *In case you dont want to create an account, you can use the
                 following credentials to login: <br />
                 Email: jaloh53056@jahsec.com <br />
                 Password: 12345678
